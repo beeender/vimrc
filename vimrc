@@ -137,5 +137,10 @@ let g:mapleader = ","
 let MRU_Max_Entries = 100
 let MRU_Auto_Close = 1
 
+"Set color
 colo spring
+
+"Indent style.
+"This is for working.
+set cino={1s
 
