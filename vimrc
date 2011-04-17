@@ -2,6 +2,9 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+" Try to know current system
+let s:win = has("win16") || has("win32") || has("win64")
+
 syntax on
 filetype plugin on
 
@@ -32,8 +35,12 @@ set autoindent shiftwidth=4
 set tags=tags,./tags,./../tags,./**/tags
 
 "Font set
+if s:win
+    set guifont=monofur:h14
+else
+    set guifont=monofur\\,WenQuanYi\ Zen\ Hei\ 13
+endif
 "set guifont=Monaco\\,WenQuanYi\ Zen\ Hei\ 11
-set guifont=monofur\\,WenQuanYi\ Zen\ Hei\ 13
 "set guifont=Anonymous\\,WenQuanYi\ Zen\ Hei\ 11
 
 "Turn backup off
@@ -44,7 +51,7 @@ set noswapfile
 "Change buffer without saving
 set hid
 
-"Just set it as the tip recommand
+"Just set it as the tip recommand. Set magic on, for regular expressions
 set magic
 
 "Format the statusline
@@ -115,9 +122,7 @@ noremap <F5> :tprevious<CR>
 noremap <F6> :bdelete<CR>
 noremap <A-n> :cn<CR>
 noremap <A-p> :cp<CR>
-
-"Key bindings for system clipboard
-vmap <leader>c "+y
+"Key bindings for system clipboard vmap <leader>c "+y
 nmap <leader>c "+y
 imap <leader>v <ESC>"+p
 vmap <leader>v <ESC>"+p
@@ -128,6 +133,9 @@ nmap <leader>v "+p
 imap ( ()<LEFT>
 imap { {}<LEFT><SPACE>
 imap [ []<LEFT>
+imap ' ''<LEFT>
+imap " ""<LEFT>
+
 
 "Set mapleader
 let mapleader = ","
@@ -143,4 +151,10 @@ colo spring
 "Indent style.
 "This is for working.
 set cino={1s
+
+set wildmenu "For invoke ext-command auto-completion
+
+set ignorecase "Ignore case when searching
+set smartcase "Not for # * etc.
+
 
