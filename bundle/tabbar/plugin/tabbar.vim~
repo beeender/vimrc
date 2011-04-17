@@ -1236,10 +1236,6 @@ endfunction " %%
 
 " Bf_SwitchTo      Switch to bufNum( parameter) buffer~~
 function! <SID>Bf_SwitchTo( bufNum)
-    " go back to the working buffer
-    if (bufname('%') == '-TabBar-')
-        wincmd p
-    endif
 
     let l:vimbuf = <SID>Map_Get_key( a:bufNum )
     exec "b!" . l:vimbuf
