@@ -137,4 +137,5 @@ let g:mapleader = ","
 let MRU_Max_Entries = 100
 let MRU_Auto_Close = 1
 
+colo spring
 
