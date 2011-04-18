@@ -132,6 +132,10 @@ vmap <leader>c "+y
 imap <leader>v <ESC>"+p
 vmap <leader>v <ESC>"+p
 nmap <leader>v "+p
+
+"Key bindings for NERDTree
+noremap <leader>nn :NERDTreeToggle<CR>
+noremap <leader>nf :NERDTreeFind<CR>
 "---- End key bindings ----
 
 "Brackets completion
