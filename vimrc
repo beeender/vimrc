@@ -5,6 +5,10 @@ call pathogen#helptags()
 " Try to know current system
 let s:win = has("win16") || has("win32") || has("win64")
 
+"Set mapleader
+let mapleader = ","
+let g:mapleader = ","
+
 syntax on
 filetype plugin on
 
@@ -124,6 +128,7 @@ noremap <A-n> :cn<CR>
 noremap <A-p> :cp<CR>
 "Key bindings for system clipboard vmap <leader>c "+y
 nmap <leader>c "+y
+vmap <leader>c "+y
 imap <leader>v <ESC>"+p
 vmap <leader>v <ESC>"+p
 nmap <leader>v "+p
@@ -136,10 +141,6 @@ imap [ []<LEFT>
 imap ' ''<LEFT>
 imap " ""<LEFT>
 
-
-"Set mapleader
-let mapleader = ","
-let g:mapleader = ","
 
 "MRU setting
 let MRU_Max_Entries = 100
