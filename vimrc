@@ -138,8 +138,8 @@ nmap <leader>v "+p
 imap ( ()<LEFT>
 imap { {}<LEFT><SPACE>
 imap [ []<LEFT>
-imap ' ''<LEFT>
-imap " ""<LEFT>
+inoremap ' ''<LEFT>
+inoremap " ""<LEFT>
 
 
 "MRU setting
