@@ -151,7 +151,11 @@ let MRU_Max_Entries = 100
 let MRU_Auto_Close = 1
 
 "Set color
-colo spring
+if has("gui_running")
+    colo spring
+else
+    colo slate
+endif
 
 "Indent style.
 "This is for working.
