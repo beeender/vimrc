@@ -152,7 +152,7 @@ let MRU_Auto_Close = 1
 
 "Set color
 if has("gui_running")
-    colo spring
+    colo brookstream
 else
     colo slate
 endif
