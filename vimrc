@@ -150,12 +150,8 @@ inoremap " ""<LEFT>
 let MRU_Max_Entries = 100
 let MRU_Auto_Close = 1
 
-"Set color
-if has("gui_running")
-    colo brookstream
-else
-    colo slate
-endif
+set background=dark
+colorscheme solarized
 
 "Indent style.
 "This is for working.
