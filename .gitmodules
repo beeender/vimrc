@@ -19,3 +19,6 @@
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = http://github.com/altercation/vim-colors-solarized.git
+[submodule ".vim/bundle/sudoedit"]
+	path = .vim/bundle/sudoedit
+	url = https://github.com/chrisbra/SudoEdit.vim.git
