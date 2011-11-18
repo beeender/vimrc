@@ -162,4 +162,8 @@ set wildmenu "For invoke ext-command auto-completion
 set ignorecase "Ignore case when searching
 set smartcase "Not for # * etc.
 
+"Source special vim rc for particular projects
+if filereadable("vimrc")
+    source vimrc
+endif
 
