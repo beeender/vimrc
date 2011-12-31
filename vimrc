@@ -164,6 +164,6 @@ set smartcase "Not for # * etc.
 
 "Source special vim rc for particular projects
 if filereadable("custom_vimrc")
-    source vimrc
+    source custom_vimrc
 endif
 
