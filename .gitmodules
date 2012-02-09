@@ -22,3 +22,6 @@
 [submodule "bundle/sudoedit"]
 	path = bundle/sudoedit
 	url = https://github.com/chrisbra/SudoEdit.vim.git
+[submodule "bundle/jslint"]
+	path = bundle/jslint
+	url = https://github.com/hallettj/jslint.vim.git
