@@ -140,7 +140,7 @@ noremap <leader>nf :NERDTreeFind<CR>
 
 "Brackets completion
 imap ( ()<LEFT>
-imap { {}<LEFT><SPACE>
+imap { {}<LEFT>
 imap [ []<LEFT>
 inoremap ' ''<LEFT>
 inoremap " ""<LEFT>
@@ -166,4 +166,3 @@ set smartcase "Not for # * etc.
 if filereadable("custom_vimrc")
     source custom_vimrc
 endif
-
