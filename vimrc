@@ -166,3 +166,6 @@ set smartcase "Not for # * etc.
 if filereadable("custom_vimrc")
     source custom_vimrc
 endif
+
+"Automatically remove all trailing spaces
+autocmd FileType c,cpp,h,java,php,sx,sxdef,py,rb,pl autocmd BufWritePre <buffer> :%s/\s\+$//e
