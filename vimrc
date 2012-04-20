@@ -34,6 +34,12 @@ set expandtab
 set tabstop=4
 set cindent shiftwidth=4
 set autoindent shiftwidth=4
+filetype plugin indent on
+
+"Indent style.
+"This is for working.
+"set cino={1s
+
 
 "Recursively looking for tags
 set tags=tags,./tags,./../tags,./**/tags
@@ -152,10 +158,6 @@ let MRU_Auto_Close = 1
 
 set background=dark
 colorscheme solarized
-
-"Indent style.
-"This is for working.
-"set cino={1s
 
 set wildmenu "For invoke ext-command auto-completion
 
