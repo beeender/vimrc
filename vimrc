@@ -155,7 +155,7 @@ colorscheme solarized
 
 "Indent style.
 "This is for working.
-set cino={1s
+"set cino={1s
 
 set wildmenu "For invoke ext-command auto-completion
 
