@@ -25,3 +25,6 @@
 [submodule "bundle/jslint"]
 	path = bundle/jslint
 	url = https://github.com/hallettj/jslint.vim.git
+[submodule "bundle/PHP-Indenting-for-VIm"]
+	path = bundle/PHP-Indenting-for-VIm
+	url = https://github.com/2072/PHP-Indenting-for-VIm.git
