@@ -55,7 +55,30 @@ endif" %%
 " TabBar Keyboard Mappings ~~
 if ! hasmapto('1') || !hasmapto('<M-1>')
       "gui bindings containing META key, are different from terminal bindings
-      if has('gui_running')
+      if has("gui_macvim") 
+            "NORMAL mode bindings for gvim
+            noremap <unique> <script> <D-1> :call <SID>Bf_SwitchTo( 1)<CR>:<BS>
+            noremap <unique> <script> <D-2> :call <SID>Bf_SwitchTo( 2)<CR>:<BS>
+            noremap <unique> <script> <D-3> :call <SID>Bf_SwitchTo( 3)<CR>:<BS>
+            noremap <unique> <script> <D-4> :call <SID>Bf_SwitchTo( 4)<CR>:<BS>
+            noremap <unique> <script> <D-5> :call <SID>Bf_SwitchTo( 5)<CR>:<BS>
+            noremap <unique> <script> <D-6> :call <SID>Bf_SwitchTo( 6)<CR>:<BS>
+            noremap <unique> <script> <D-7> :call <SID>Bf_SwitchTo( 7)<CR>:<BS>
+            noremap <unique> <script> <D-8> :call <SID>Bf_SwitchTo( 8)<CR>:<BS>
+            noremap <unique> <script> <D-9> :call <SID>Bf_SwitchTo( 9)<CR>:<BS>
+            noremap <unique> <script> <D-0> :call <SID>Bf_SwitchTo( 10)<CR>:<BS>
+            "INSERT mode bindings for gvim
+            inoremap <unique> <script> <D-1> <esc>:call <SID>Bf_SwitchTo( 1)<CR>:<BS>a
+            inoremap <unique> <script> <D-2> <esc>:call <SID>Bf_SwitchTo( 2)<CR>:<BS>a
+            inoremap <unique> <script> <D-3> <esc>:call <SID>Bf_SwitchTo( 3)<CR>:<BS>a
+            inoremap <unique> <script> <D-4> <esc>:call <SID>Bf_SwitchTo( 4)<CR>:<BS>a
+            inoremap <unique> <script> <D-5> <esc>:call <SID>Bf_SwitchTo( 5)<CR>:<BS>a
+            inoremap <unique> <script> <D-6> <esc>:call <SID>Bf_SwitchTo( 6)<CR>:<BS>a
+            inoremap <unique> <script> <D-7> <esc>:call <SID>Bf_SwitchTo( 7)<CR>:<BS>a
+            inoremap <unique> <script> <D-8> <esc>:call <SID>Bf_SwitchTo( 8)<CR>:<BS>a
+            inoremap <unique> <script> <D-9> <esc>:call <SID>Bf_SwitchTo( 9)<CR>:<BS>a
+            inoremap <unique> <script> <D-0> <esc>:call <SID>Bf_SwitchTo( 10)<CR>:<BS>a
+      elseif has('gui_running')
             "NORMAL mode bindings for gvim
             noremap <unique> <script> <M-1> :call <SID>Bf_SwitchTo( 1)<CR>:<BS>
             noremap <unique> <script> <M-2> :call <SID>Bf_SwitchTo( 2)<CR>:<BS>
