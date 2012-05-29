@@ -148,7 +148,6 @@ noremap <leader>nf :NERDTreeFind<CR>
 imap ( ()<LEFT>
 imap { {}<LEFT>
 imap [ []<LEFT>
-inoremap ' ''<LEFT>
 inoremap " ""<LEFT>
 
 
@@ -157,7 +156,7 @@ let MRU_Max_Entries = 100
 let MRU_Auto_Close = 1
 
 set background=dark
-colorscheme solarized
+colorscheme darkbone
 
 set wildmenu "For invoke ext-command auto-completion
 
