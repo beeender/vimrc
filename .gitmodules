@@ -28,3 +28,6 @@
 [submodule "bundle/PHP-Indenting-for-VIm"]
 	path = bundle/PHP-Indenting-for-VIm
 	url = https://github.com/2072/PHP-Indenting-for-VIm.git
+[submodule "bundle/cocoa"]
+	path = bundle/cocoa
+	url = https://github.com/msanders/cocoa.vim.git
