@@ -39,7 +39,8 @@ filetype plugin indent on
 "Indent style.
 "This is for working.
 "set cino={1s
-
+"switch and case at the same level.
+:set cinoptions=l1
 
 "Recursively looking for tags
 set tags=tags,./tags,./../tags,./**/tags
@@ -166,5 +167,14 @@ set smartcase "Not for # * etc.
 "Source special vim rc for particular projects
 if filereadable("custom_vimrc")
     source custom_vimrc
+endif
+
+"EasyGrep
+let g:EasyGrepMode = 2
+let g:EasyGrepRecursive = 1
+if has('win32') || has ('win64')
+    let g:EasyGrepFileAssociations = $VIM."/EasyGrepFileAssociations"
+else
+    let g:EasyGrepFileAssociations = $HOME."/.vim"."/EasyGrepFileAssociations"
 endif
 
