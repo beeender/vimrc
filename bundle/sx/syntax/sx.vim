@@ -156,7 +156,7 @@ syn keyword sxFunc ->symbol ->number ->utf16 increment! utf16->string keys exist
 syn keyword sxFunc make-random-source random-source? randomize! integer real
 syn keyword sxFunc object-members object-of create-publisher get
 syn keyword sxFunc unsubscribe subscribe listen publish send send/super
-syn keyword sxFunc bytevector bytevector? bitwise-and bitwise-or bitwise-not
+syn keyword sxFunc bytevector bytevector? bitwise-and bitwise-ior bitwise-not
 syn keyword sxFunc bitwise-xor bitwise-arithmetic-shift bitwise-bit-count
 
 syn keyword sxFunc regexp make-regexp match
