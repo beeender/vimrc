@@ -157,7 +157,7 @@ let MRU_Max_Entries = 100
 let MRU_Auto_Close = 1
 
 set background=dark
-colorscheme nightshimmer
+colorscheme gentooish
 
 set wildmenu "For invoke ext-command auto-completion
 
