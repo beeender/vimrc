@@ -156,7 +156,9 @@ inoremap " ""<LEFT>
 let MRU_Max_Entries = 100
 let MRU_Auto_Close = 1
 
-set background=dark
+if !has("gui_running")
+set t_Co=256
+endif
 colorscheme gentooish
 
 set wildmenu "For invoke ext-command auto-completion
