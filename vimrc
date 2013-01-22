@@ -67,7 +67,6 @@ set magic
 
 "Format the statusline
 set laststatus=2
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%04.8b]\ [HEX=\%04.4B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 
 "Use cscope tags first.
 set csto=0
