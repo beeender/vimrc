@@ -173,3 +173,6 @@ else
     let g:EasyGrepFileAssociations = $HOME."/.vim"."/EasyGrepFileAssociations"
 endif
 
+"vim-notes
+let g:notes_directories = ['~/Documents/Notes', '~/Dropbox/Shared Notes']
+
