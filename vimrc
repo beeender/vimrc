@@ -176,3 +176,12 @@ endif
 "vim-notes
 let g:notes_directories = ['~/Documents/Notes', '~/Dropbox/Shared Notes']
 
+"ctrlp
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=40
+let g:ctrlp_custom_ignore = {
+            \ 'dir':  '\v[\/](\.git|\.hg|\.svn|out)$',
+            \ 'file': '\v\.(exe|so|dll|jar|apk)$',
+            \ }
+
+
