@@ -177,12 +177,13 @@ endif
 let g:notes_directories = ['~/Documents/Notes', '~/Dropbox/Shared Notes']
 
 "ctrlp
-let g:ctrlp_clear_cache_on_exit=0
-let g:ctrlp_max_files=0
-let g:ctrlp_max_depth=40
+let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_max_files = 0
+let g:ctrlp_max_depth = 40
+let g:ctrlp_lazy_update = 1
+let g:ctrlp_by_filename = 1
 let g:ctrlp_custom_ignore = {
             \ 'dir':  '\v[\/](\.git|\.hg|\.svn|out)$',
             \ 'file': '\v\.(exe|so|dll|jar|apk)$',
             \ }
-
 
