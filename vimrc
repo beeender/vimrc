@@ -41,6 +41,8 @@ filetype plugin indent on
 "set cino={1s
 "switch and case at the same level.
 :set cinoptions=l1
+"C++ scope declaration (private, public, etc.)
+set cino+=g0
 
 "Recursively looking for tags
 set tags=tags,./tags,./../tags,./**/tags
@@ -186,4 +188,8 @@ let g:ctrlp_custom_ignore = {
             \ 'dir':  '\v[\/](\.git|\.hg|\.svn|out)$',
             \ 'file': '\v\.(exe|so|dll|jar|apk)$',
             \ }
+
+"YouCompleteMe
+"Turn off extra conf load query.
+let g:ycm_confirm_extra_conf = 0
 
