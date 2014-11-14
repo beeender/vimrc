@@ -193,3 +193,5 @@ let g:ctrlp_custom_ignore = {
 "Turn off extra conf load query.
 let g:ycm_confirm_extra_conf = 0
 
+"Turn off python-mode completion. Conflicts with YCM
+let g:pymode_rope_completion = 0
