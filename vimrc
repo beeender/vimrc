@@ -179,6 +179,7 @@ endif
 let g:notes_directories = ['~/Documents/Notes', '~/Dropbox/Shared Notes']
 
 "ctrlp
+noremap <leader>ne :CtrlP<CR>
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_max_files = 0
 let g:ctrlp_max_depth = 40
