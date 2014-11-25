@@ -176,7 +176,7 @@ else
 endif
 
 "vim-notes
-let g:notes_directories = ['~/Documents/Notes', '~/Dropbox/Shared Notes']
+let g:notes_directories = ['~/Dropbox/Private/Notes', '~/Documents/Notes']
 
 "ctrlp
 noremap <leader>ne :CtrlP<CR>
