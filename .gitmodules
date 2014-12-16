@@ -52,9 +52,6 @@
 [submodule "bundle/vim-ultimate-colorscheme-utility"]
 	path = bundle/vim-ultimate-colorscheme-utility
 	url = https://github.com/biskark/vim-ultimate-colorscheme-utility.git
-[submodule "bundle/YouCompleteMe"]
-	path = bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "bundle/vim-qml"]
 	path = bundle/vim-qml
 	url = https://github.com/peterhoeg/vim-qml.git
