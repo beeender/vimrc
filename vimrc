@@ -4,6 +4,7 @@ call pathogen#helptags()
 
 " Try to know current system
 let s:win = has("win16") || has("win32") || has("win64")
+let s:mac = has("mac") || has("darwin")
 
 "Set mapleader
 let mapleader = ","
@@ -49,6 +50,8 @@ set tags=tags,./tags,./../tags,./**/tags
 
 "Font set
 if s:win
+    set guifont=monofur:h14
+elseif s:mac
     set guifont=monofur:h14
 else
     set guifont=monofur\\,WenQuanYi\ Zen\ Hei\ 13
