@@ -61,3 +61,6 @@
 [submodule "bundle/swift.vim"]
 	path = bundle/swift.vim
 	url = https://github.com/Keithbsmiley/swift.vim.git
+[submodule "bundle/vim-gradle"]
+	path = bundle/vim-gradle
+	url = git@github.com:tfnico/vim-gradle.git
