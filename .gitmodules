@@ -64,3 +64,6 @@
 [submodule "bundle/vim-gradle"]
 	path = bundle/vim-gradle
 	url = git@github.com:tfnico/vim-gradle.git
+[submodule "bundle/fcitx.vim"]
+	path = bundle/fcitx.vim
+	url = git@github.com:lilydjwg/fcitx.vim.git
