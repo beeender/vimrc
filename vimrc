@@ -164,6 +164,8 @@ set wildmenu "For invoke ext-command auto-completion
 set ignorecase "Ignore case when searching
 set smartcase "Not for # * etc.
 
+autocmd FilterWritePre * if &diff | setlocal wrap< | endif
+
 "Source special vim rc for particular projects
 if filereadable("custom_vimrc")
     source custom_vimrc
@@ -199,3 +201,4 @@ let g:ycm_confirm_extra_conf = 0
 
 "Turn off python-mode completion. Conflicts with YCM
 let g:pymode_rope_completion = 0
+
